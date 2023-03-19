@@ -28,6 +28,6 @@ Works even if two users say different things at the same time in the same vc
 
 ## Thoughts
 - Live transcript in this usecase has not been possible due to the way `start_recording` in pycord has been implemented 
-- It could cork if you modify the source sink class a bit but that's out of scope for this as I wrote this sort of as a quick hack script for my main role-playing discord bot.
+- It could work if you modify the source sink class a bit but that's out of scope for this as I wrote this sort of as a quick hack script for my main role-playing discord bot.
 - You could migrate from using `,start` and `,stop` to events like muting and unmuting mic for a smoother experience
 - DM **Adrick#6640** 
