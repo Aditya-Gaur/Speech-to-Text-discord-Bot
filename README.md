@@ -25,9 +25,17 @@ await channel.send(f"finished recording audio for: {', '.join(recorded_users)}."
 Works even if two users say different things at the same time in the same vc
 ![image](https://user-images.githubusercontent.com/75514601/226164625-dfd24d95-16f8-4675-ad98-c9100d09e94f.png)
 
+## mainv2.py
+```bash
+$python3 mainv2.py
+```
+**[This is an improved version of the original]**
+Use `start` to connect bot to vc and `stop` to disconnect.
+It will automatically start transcribing when you unmute your mic and stop the second you mute yourself.
+- Note: Make however many mute-unmute instances you want in a single connection.
 
 ## Thoughts
 - Live transcript in this usecase has not been possible due to the way `start_recording` in pycord has been implemented 
 - It could work if you modify the source sink class a bit but that's out of scope for this as I wrote this sort of as a quick hack script for my main role-playing discord bot.
 - You could migrate from using `,start` and `,stop` to events like muting and unmuting mic for a smoother experience
-- DM **Adrick#6640** 
+- Support Server : https://discord.gg/8Rpdh9uk6J
